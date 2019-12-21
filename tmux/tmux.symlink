@@ -1,0 +1,44 @@
+set -g prefix2 C-a
+bind C-a send-prefix -2
+
+set -g mouse on
+set -g base-index 1
+set -g pane-base-index 1
+set -g default-terminal "screen-256color"
+set -g history-limit 5000
+set -g set-titles on
+
+# don't allow rename windows automatically
+set-option -g allow-rename off
+
+# edit configuration
+bind | split-window -h -c '#{pane_current_path}'
+bind - split-window -v -c '#{pane_current_path}'
+
+set -g pane-active-border-style bg=default,fg=colour244
+
+unbind n
+unbind p
+unbind '"'
+unbind %
+
+setw -g mode-keys vi
+
+# install reattach-to-user-namespace
+unbind-key k
+bind-key k delete-buffer \; clear-history \; send-keys "clear" \; send-keys "Enter" \; delete-buffer \; clear-history
+
+# reload ~/.tmux.conf using PREFIX r
+bind r source-file ~/.tmux.conf \; display "Reloaded!"
+
+# maximize current pane
+bind + run 'cut -c3- ~/.tmux.conf | sh -s _maximize_pane "#{session_name}" #D'
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run-shell "$HOME/.tmux/powerline-theme.tmux"
+run -b '~/.tmux/plugins/tpm/tpm'
