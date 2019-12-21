@@ -692,7 +692,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>560 474 799 448 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>281 67 1320 882 0 0 1920 1080 </string>
+	<string>113 27 1480 1002 0 0 1920 1080 </string>
 	<key>NeverWarnAboutShortLivedSessions_21048CBB-8F4B-4492-A49A-8DCDADDF9248</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -904,7 +904,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>160</integer>
+			<integer>200</integer>
 			<key>Command</key>
 			<string>zsh --login</string>
 			<key>Cursor Color</key>
@@ -1623,7 +1623,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>598588676.27176595</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>24</integer>
+	<integer>33</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2350,6 +2350,8 @@
 		<string>201911-181508</string>
 		<string>201912-190836</string>
 	</array>
+	<key>NoSyncSuppressClipboardAccessDeniedWarning</key>
+	<true/>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>598278809.77367496</real>
 	<key>NoSyncTipsToNotShow</key>
