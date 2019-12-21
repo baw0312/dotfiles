@@ -1,6 +1,6 @@
 #!/bin/sh
 [ "$(uname -s)" != "Darwin" ] && exit 0
 sed "s;/Users/carlos;$HOME;g" \
-	"$DOTFILES"/iterm2/com.googlecode.iterm2.plist.example >"$DOTFILES"/iterm2/com.googlecode.iterm2.plist
-defaults write com.googlecode.iterm2 "PrefsCustomFolder" -string "$DOTFILES/iterm"
+    "$DOTFILES"/iterm2/com.googlecode.iterm2.plist.example >"$DOTFILES"/iterm2/com.googlecode.iterm2.plist
+defaults write com.googlecode.iterm2 "PrefsCustomFolder" -string "$DOTFILES/iterm2"
 defaults write com.googlecode.iterm2 "LoadPrefsFromCustomFolder" -bool true

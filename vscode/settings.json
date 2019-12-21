@@ -8,7 +8,6 @@
 	"terminal.integrated.cursorStyle": "line",
 	"editor.fontFamily": "Fira Code Retina, Inconsolata, Menlo, Monaco, 'Courier New', monospace",
 	"editor.fontLigatures": true,
-	"editor.formatOnSave": true,
 	"editor.renderWhitespace": "none",
 	"editor.trimAutoWhitespace": true,
 	"editor.tabCompletion": "on",
@@ -46,5 +45,14 @@
 	"go.languageServerExperimentalFeatures": {
 		"format": true,
 		"autoComplete": true
+	},
+	"[json]": {
+		"editor.defaultFormatter": "HookyQR.beautify"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "HookyQR.beautify"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "HookyQR.beautify"
 	}
 }
