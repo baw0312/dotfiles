@@ -43,7 +43,7 @@ For macOS, I recommend:
 
 ### Themes and fonts being used
 
-Theme is **[Dracula](https://draculatheme.com)** and the font is
+Theme is **[Monokai Soda Dark]** and the font is
 **Inconsolata for Powerline**.
 
 ## Contributing

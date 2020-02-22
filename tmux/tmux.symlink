@@ -15,7 +15,8 @@ set-option -g allow-rename off
 bind | split-window -h -c '#{pane_current_path}'
 bind - split-window -v -c '#{pane_current_path}'
 
-set -g pane-active-border-style bg=default,fg=colour244
+set -g pane-border-style fg=colour244
+set -g pane-active-border-style bg=default,fg=white
 
 unbind n
 unbind p
@@ -40,5 +41,5 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
-run-shell "$HOME/.tmux/powerline-theme.tmux"
+run-shell "$DOTFILES/tmux/powerline-theme.tmux"
 run -b '~/.tmux/plugins/tpm/tpm'

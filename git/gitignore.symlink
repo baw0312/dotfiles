@@ -14,3 +14,10 @@
 .vscode/
 dump.rdb
 main.tfvars
+phpunit.xml
+/
+.php_cs.cache
+package-lock.json
+.editorconfig
+.phpunit.result.cache
+.php_cs.cache
