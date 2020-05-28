@@ -1,5 +1,5 @@
 {
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.smoothScrolling": true,
   "editor.fontFamily": "'FiraCode-Retina'",
   "editor.fontLigatures": true,
@@ -7,19 +7,26 @@
   "editor.trimAutoWhitespace": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 4,
+  "editor.lineHeight": 25,
+  "editor.letterSpacing": 0.5,
   "editor.rulers": [
 		80,
 		120
 	],
   "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Dracula",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Cobalt2",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "markdown-preview-enhanced.previewTheme": "solarized-dark.css",
+  "markdown-preview-enhanced.codeBlockTheme": "solarized-dark.css",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   "window.zoomLevel": 0,
   "window.newWindowDimensions": "maximized",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.shell.osx": "/bin/zsh",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.3,
   "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
@@ -72,4 +79,9 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "vs-kubernetes": {
+    "vs-kubernetes.helm-path.mac": "/Users/nguyentodo/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+    "vs-kubernetes.minikube-path.mac": "/Users/nguyentodo/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vs-kubernetes.draft-path.mac": "/Users/nguyentodo/.vs-kubernetes/tools/draft/darwin-amd64/draft"
+  }
 }

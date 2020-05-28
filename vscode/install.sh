@@ -13,26 +13,35 @@ if command -v code >/dev/null; then
 	ln -sf "$DOTFILES/vscode/snippets" "$VSCODE_HOME/User/snippets"
 
 	modules="
-be5invis.toml
-coolbear.systemd-unit-file
+alefragnani.Bookmarks
+CoenraadS.bracket-pair-colorizer
+dbaeumer.vscode-eslint
+dsznajder.es7-react-js-snippets
 eamodio.gitlens
 EditorConfig.EditorConfig
-fabiospampinato.vscode-monokai-night
-foxundermoon.shell-format
+esbenp.prettier-vscode
+formulahendry.auto-rename-tag
+hediet.vscode-drawio
 HookyQR.beautify
+ipedrazas.kubernetes-snippets
+kumar-harsh.graphql-for-vscode
+marcostazi.VS-code-vagrantfile
 mauve.terraform
-mechatroner.rainbow-csv
 ms-azuretools.vscode-docker
+ms-kubernetes-tools.vscode-kubernetes-tools
 ms-python.python
 ms-vscode.Go
-PKief.material-icon-theme
 quicktype.quicktype
 redhat.vscode-yaml
-shanoor.vscode-nginx
-tommasov.hosts
-vscoss.vscode-ansible
+ritwickdey.LiveServer
+rokoroku.vscode-theme-darcula
+steoates.autoimport
+streetsidesoftware.code-spell-checker
+VisualStudioExptTeam.vscodeintellicode
+vscode-icons-team.vscode-icons
+wesbos.theme-cobalt2
+wix.vscode-import-cost
 xabikos.JavaScriptSnippets
-yzhang.markdown-all-in-one
 "
 	for module in $modules; do
 		code --install-extension "$module" || true

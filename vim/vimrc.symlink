@@ -47,9 +47,6 @@ Plug 'mhinz/vim-sayonara', { 'on': 'Sayonara' }
 " messing up your layout
 Plug 'moll/vim-bbye'
 
-" Colors
-Plug 'dracula/vim', {'as': 'dracula'}
-
 call plug#end()
 
 set nocompatible              " be iMproved, required
@@ -225,7 +222,6 @@ endif
 if exists('+termguicolors')
   set termguicolors
 endif
-:silent! colorscheme dracula
 "set background=dark
 " let g:hybrid_use_Xresources = 1
 " let g:rehash256 = 1
@@ -359,12 +355,6 @@ function! XTermPasteBegin()
   return ""
 endfunction
 
-" set 80 character line limit
-if exists('+colorcolumn')
-  set colorcolumn=80
-else
-  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
-endif
 
 " ----------------------------------------- "
 " File Type settings 			    		"
