@@ -7,6 +7,10 @@
   "editor.trimAutoWhitespace": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 4,
+  "editor.rulers": [
+		80,
+		120
+	],
   "editor.minimap.enabled": false,
   "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
@@ -28,6 +32,7 @@
     "**/bower_components": true,
     "/vendor": true
   },
+  "go.lintTool": "golangci-lint",
   "go.coverageDecorator": {
     "type": "gutter",
     "coveredHighlightColor": "rgba(64,128,128,0.5)",
@@ -41,6 +46,7 @@
   "go.autocompleteUnimportedPackages": true,
   "go.coverOnSingleTest": true,
   "go.useLanguageServer": true,
+  "go.lintFlags": ["--enable-all", "--new"],
   "go.buildFlags": [
 		"-v"
 	],
@@ -50,6 +56,9 @@
   "go.languageServerExperimentalFeatures": {
     "format": true,
     "autoComplete": true
+  },
+  "[go]":  {
+    "editor.formatOnSave": true
   },
   "[json]": {
     "editor.defaultFormatter": "HookyQR.beautify"
@@ -63,19 +72,4 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.associations": {},
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "shellformat.effectLanguages": [
-    "shellscript",
-    "dockerfile",
-    "dotenv",
-    "hosts",
-    "jvmoptions",
-    "ignore",
-    "gitignore",
-    "properties",
-    "spring-boot-properties",
-    "azcli"
-  ],
 }
